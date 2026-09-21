@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CineCRUD | Filmes</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div>
+      <span class="eyebrow">Melissa e Bonfim</span>
+      <h1>CineCRUD</h1>
+    </div>
+    <a class="btn btn-primary" href="cadastrar.html">+ Cadastrar filme</a>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div>
+        <span class="badge">Sistema de filmes</span>
+        <h2>Gerencie seus filmes em um só lugar.</h2>
+        <p>Cadastre, edite e apague filmes de forma simples.</p>
+      </div>
+      <div class="stats">
+        <strong id="totalFilmes">0</strong>
+        <span>filmes cadastrados</span>
+      </div>
+    </section>
+
+    <section class="section-header">
+      <div>
+        <h3>Filmes cadastrados</h3>
+        <p>Use os botões de cada card para editar ou apagar.</p>
+      </div>
+      <input id="busca" type="search" placeholder="Buscar por título..." />
+    </section>
+
+    <section id="listaFilmes" class="movie-grid"></section>
+
+    <div id="estadoVazio" class="empty-state" hidden>
+      <h3>Nenhum filme encontrado</h3>
+      <p>Cadastre o primeiro filme para começar.</p>
+      <a class="btn btn-primary" href="cadastrar.html">Cadastrar filme</a>
+    </div>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
